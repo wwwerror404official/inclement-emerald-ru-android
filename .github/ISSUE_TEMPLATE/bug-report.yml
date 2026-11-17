@@ -1,0 +1,29 @@
+name: Ошибка перевода или графики
+description: Сообщить об ошибке текста, графики или производительности.
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Версия APK
+      placeholder: v0.1.0-android-beta
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Модель телефона и версия Android
+      placeholder: Samsung Galaxy A55, Android 15
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Где и как повторить
+      description: Укажи карту или меню, что ты сделал и что произошло. Если проблема в тексте, приведи фразу.
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Скриншот и видео
+      description: Приложи скриншот и по возможности короткое видео. Для большого видео можно вставить ссылку.
